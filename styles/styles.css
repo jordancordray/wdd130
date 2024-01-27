@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(128, 172, 172);
+}
+
+.nav_link {
+    padding: 10px;
+    color: black;
+    font-size: 1.3em;
+}
