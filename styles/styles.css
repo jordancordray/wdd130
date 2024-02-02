@@ -1,5 +1,4 @@
 
-
 body {
     background-color: rgb(128, 172, 172);
     margin: 0;
@@ -43,7 +42,7 @@ p{
 }
 
 img {
-    width: 300px;
+    width: 10%;
     display: block;
     margin: 0 auto;
 }
