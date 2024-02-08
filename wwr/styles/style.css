@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Burned&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,10 +9,14 @@ nav a {
     text-align: center;
     color: #cecfd9;
     text-decoration: none;
+    padding: 35px;
 }
 
 .home-title {
     color:#053e24;
+    font-family: "Rubik Burned";
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -36,6 +42,14 @@ main section{
 
 body {
     background-color: #cecfd9;
+    font-family: "Roboto";
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
@@ -51,28 +65,39 @@ nav a:hover{
     background-color: #181e6b;
     color:#cecfd9;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
     background-color:#053e24 ;
     color:#cecfd9;
+    margin-top: 50px;
 }
 
 .msg h2 {
     color:#053e24;
+    font-family: "Rubik Burned";
 }
 
 .msg p {
     color: #053e24;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 .msg{ 
     background-color: #9192be;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 footer {
     background-color: #9192be;
     color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -98,8 +123,29 @@ footer a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card  {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid  black;
+}
+
+main section img {
+    box-sizing: border-box;
 }
