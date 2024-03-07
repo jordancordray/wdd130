@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Burned&display=swap');
 
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -235,6 +236,94 @@ main section img {
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
+}
+
+/* rivers page */
+
+.river-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#main-fork h1 {
+    color:#cecfd9;
+    font-family: 'Rubik Burned';
+
+}
+
+#main-fork p {
+    grid-column: 1/3;
+    color: #cecfd9;
+    padding: 10px;
+}
+
+#main-fork {
+    background-color: #053e24;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    padding: 15px;
+    margin: 50px auto;
+    border: 10px solid #232329;
+    border-radius: 100px;
+}
+
+#desolation h1 {
+    color:#cecfd9;
+    font-family: 'Rubik Burned';
+    
+}
+
+#desolation p {
+    color: #cecfd9;
+    padding: 10px;
+}
+ 
+#desolation{
+    background-color: #053e24;
+    grid-row: 3/5;
+    grid-column: 1/3;
+    padding: 15px;
+    margin: 50px auto;
+    border: 10px solid #232329;
+    border-radius: 100px;
+}
+
+#grand-canyon h1 {
+    color:#cecfd9;
+    font-family: 'Rubik Burned';
+    
+}
+
+#grand-canyon p {
+    color: #cecfd9;
+    padding: 10px;
+}
+
+#grand-canyon {
+    background-color: #053e24;
+    grid-row: 5/7;
+    grid-column: 1/3;
+    padding: 15px;
+    margin: 50px auto;
+    border: 10px solid #232329;
+    border-radius: 100px;
+}
+
+.img1 {
+    width: 30%;
+    grid-column: 1;
+    margin: 10px;
+    border: 7px solid #232329;
+    border-radius: 100px;
+}
+
+.img2 {
+    width: 30%;
+    grid-column: 2;
+    margin: 10px;
+    border:  7px solid #232329;
+    border-radius: 100px;
 }
 
 @media screen and (max-width: 900px) {
