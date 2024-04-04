@@ -95,9 +95,9 @@ footer a:hover {
     background-color: #e41b33;
     color:white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
     font-family: "Bebas Neue";
-    padding: 15px 30px;
+    padding: 18px 50px;
     border-radius: 5px;
 }
 
@@ -133,6 +133,7 @@ footer a:hover {
 
 .button { 
     text-align: center;
+    padding: 10px;
 }
 
 #box-grid {
@@ -287,3 +288,44 @@ h1 {
     text-align: center;
     width: 80%;
   }
+
+/* Quality Assurance */
+
+.intro {
+    color: #067bac;
+    text-align: center;
+}
+
+.introh1 {
+    font-size: 4em;
+    color: #067bac;
+    text-align: center;
+}
+
+.box-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.box-grid h1 {
+    grid-column: 1/7;
+    grid-row: 1/2;
+}
+
+.box-grid p {
+    grid-column: 1/7;
+    grid-row: 2/3;
+}
+
+.button1 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    margin: auto;
+}
+
+.button2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto;
+}
