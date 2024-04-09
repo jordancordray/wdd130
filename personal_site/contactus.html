@@ -19,12 +19,41 @@
             </nav>
         </header>
         <main>
+
+            <h1 id="title">Sign Up for Donimos Rewards</h1>
+
+
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                    <label for="fname">First Name:</label>
+                    <input required type="text" id="fname" name="user_fname" >
+                    </li>
+                    <li>
+                    <label for="lname">Last Name:</label>
+                    <input required type="text" id="lname" name="user_lname" >
+                    </li>
+                    <li>
+                    <label for="mail">Email:</label>
+                    <input required type="email" id="mail" name="user_email" >
+                    </li>
+                    <li>
+                    <label for="phone">Phone #:</label>
+                    <input required type="tel" id="phone" name="user_phone" >
+                    </li>
+                    <li class="button">
+                        <button type="submit">Join the Family</button>
+                    </li>
+                </ul>
+            </form>
             
+        
         </main> 
         <footer>
             <p>Donimos &copy; 2024 - Jordan Cordray</p>
             <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="contactus.html">Contact Us</a></p>
+            <p><a href="contactus.html">Donimos Rewards</a></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebook.png" alt="fb icon">
@@ -38,5 +67,22 @@
             </div>
         </footer>
     </div>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_fname.value +'! Thank you for joining the Donimos Family. Enjoy your Donimos rewards!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.add('moveDown'); // use add instead of toggle
+    });
+</script>
 </body>
 </html>
